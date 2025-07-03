@@ -1,0 +1,128 @@
+/* Admin Page Background: gradient from dark ash to light ash */
+/* Admin Page Background with Purple Gradient */
+body.admin-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* ✅ Dark purple → Light purple → White  */
+    background: linear-gradient(to bottom, #ffffff, #c6a0f6, #4b0082);
+}
+
+
+/* ===== Header Styling (same as user pages) ===== */
+header {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.logo-icon {
+    height: 46px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ===== Login Form Container ===== */
+.admin-login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* ===== Login Box ===== */
+.admin-login-box {
+    background-color: rgba(255, 255, 255, 0.15); /* translucent card */
+    backdrop-filter: blur(6px);                  /* slight blur behind */
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 460px;                               /* Adjusted: reduced height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Admin Icon ===== */
+.admin-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 70px;                         /* ✅ Increased: more space between icon and first field */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Form Layout Inside Box ===== */
+.admin-login-box form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* ===== Input Fields ===== */
+.admin-login-box input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 55px;                         /* ✅ Increased: more space between username & password */
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 40px;                         /* ✅ Increased: more space before login button */
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Login Button at Bottom ===== */
+.admin-login-box input[type="submit"] {
+    margin-top: auto;                            /* ✅ Ensures button stays at bottom of form */
+    width: 100%;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.admin-login-box input[type="submit"]:hover {
+    background-color: #320060;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: auto;                            /* Pushes footer to bottom */
+}

@@ -1,0 +1,144 @@
+/* Background image (used in other pages) */
+.background {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+body.dashboard-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.logo-icon {
+    height: 46px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Welcome message */
+.welcome-msg {
+    text-align: center;
+    margin-top: 30px;
+    color: #4b0082;
+}
+
+/* Main container layout */
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 30px;
+}
+
+/* Left panel buttons */
+.left-panel {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-panel button {
+    padding: 14px;
+    font-size: 16px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.left-panel button:hover {
+    background-color: #320060;
+}
+
+/* Right image gallery */
+.right-panel {
+    flex: 0 0 70%;
+}
+
+	/* Filled grid image gallery box */
+.filled-gallery {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Larger images with soft transparent border */
+.filled-gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+
+/* Progress Section */
+.progress-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.progress-section h3 {
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.progress-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.progress-gallery img {
+    width: 23%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}

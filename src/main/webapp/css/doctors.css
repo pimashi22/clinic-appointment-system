@@ -1,0 +1,161 @@
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+body.dark-purple {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Background Image */
+.background {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* =========================================
+   HEADER & FOOTER
+========================================= */
+header {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.logo-icon {
+    height: 46px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+footer {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* =========================================
+   MASSIVE HERO COLUMN — DOCTOR HIGHLIGHT
+========================================= */
+.doctor-hero {
+    background-color: #001f4d;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 60px;
+    margin-top: 40px;
+    
+}
+
+.doctor-text {
+    flex: 1 1 60%;
+    padding: 0;
+}
+.doctor-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.doctor-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.doctor-image {
+    flex: 1 1 35%;
+    text-align: right;
+}
+.doctor-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+/* =========================================
+   DOCTORS TABLE
+========================================= */
+.table-heading {
+    margin: 40px;
+    color: #333366;
+}
+
+.doctor-table-box {
+    background-color: #e5e5e5;
+    margin: 0 auto;
+    padding: 25px;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+th, td {
+    padding: 12px 14px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* =========================================
+   BUTTON STYLES
+========================================= */
+.remove-btn {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove-btn:hover {
+    background-color: #990000;
+}
+
+.add-doctor-btn {
+    text-align: right;
+    margin: 30px 50px 60px 0;
+}
+
+.add-doctor-btn .btn {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}

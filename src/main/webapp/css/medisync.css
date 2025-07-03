@@ -1,0 +1,242 @@
+/* === BACKGROUND IMAGE === */
+.background {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* === BODY THEME === */
+body.dark-purple {
+    font-family: Arial, sans-serif;
+    color: #1E3A8A;
+    margin: 0;
+    padding: 0;
+}
+
+/* === HEADER === */
+header {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.logo-icon {
+    height: 46px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: rgba(75, 0, 130, 0.95);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* === SIGNUP LAYOUT === */
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    gap: 80px; /* Increased space between form and image */
+    flex-wrap: wrap;
+}
+
+/* === FORM BOX (Ash background + modern style) === */
+.signup-form-box {
+    flex: 1.3;
+    background-color: #e6e6e6; /* ASH color */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form-box h2 {
+    text-align: center;
+    color: #1E3A8A;
+    margin-bottom: 25px;
+}
+
+.signup-form-box input,
+.signup-form-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.signup-form-box input[type="submit"] {
+    background-color: #800080;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form-box input[type="submit"]:hover {
+    background-color: #4b004b;
+}
+
+/* === IMAGE SIDE === */
+.signup-image {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.signup-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+
+/* === PERSONAL DETAILS PAGE === */
+.profile-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px;
+    position: relative;
+}
+
+.user-header {
+    position: absolute;
+    top: -20px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.username-label {
+    font-size: 18px;
+    color: #1E3A8A;
+    font-weight: bold;
+}
+
+.profile-box {
+    background-color: #f1e6ff; /* Light purple */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-box h2 {
+    color: #4b004b;
+    margin-bottom: 25px;
+}
+
+.profile-box p {
+    font-size: 16px;
+    color: #1E3A8A;
+    margin: 10px 0;
+}
+
+.edit-btn {
+    background-color: #800080;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.dashboard-btn {
+    background-color: #4b004b;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+}
+
+
+.user-header {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.username-label {
+    font-size: 18px;
+    color: #1E3A8A;
+    font-weight: bold;
+}
+
+.profile-box {
+    background-color: #f1e6ff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+}
+
+.dashboard-btn {
+    background-color: #4b004b;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+    position: relative;
+}
